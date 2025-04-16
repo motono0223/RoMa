@@ -655,8 +655,10 @@ def get_autocast_params(device=None, enabled=False, dtype=None):
 
 def check_not_i16(im):
     if im.mode == "I;16":
-        raise NotImplementedError("Can't handle 16 bit images")
+        pass
+        #raise NotImplementedError("Can't handle 16 bit images")
 
 def check_rgb(im):
     if im.mode != "RGB":
-        raise NotImplementedError("Can't handle non-RGB images")
+        pass
+        #raise NotImplementedError("Can't handle non-RGB images")
